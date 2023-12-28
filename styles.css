@@ -27,6 +27,7 @@ body {
 
 /* LEFT CONTAINER */
 .container__left {
+    font-family: 'Hanken Grotesk', sans-serif;
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     width: 50%;
     border-radius: 25px;
@@ -79,6 +80,7 @@ p {
 
 /* RIGHT CONTAINER */
 .container__right {
+    font-family: 'Hanken Grotesk', sans-serif;
     background-color: #fff;
     border-radius: 15px;
     display: flex;
