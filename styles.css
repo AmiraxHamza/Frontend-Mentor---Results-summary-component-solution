@@ -1,8 +1,14 @@
+:root {
+  --p-font: 18px;
+}
+
 @import url(https://fonts.google.com/specimen/Hanken+Grotesk);
 
 @font-face {
   font-family: "Hanken Grotesk";
   src: url(/assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+  font-weight: 500, 700, 800;
+  font-style: normal;
 }
 
 * {
@@ -22,31 +28,33 @@ body {
 
 .container {
   display: flex;
-  min-width: 50%;
+  min-width: 50vw;
   min-height: 45vh;
-  box-shadow: 10px 10px 50px 10px hsla(241, 81%, 54%, 0.04);
-  border-radius: 25px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  box-shadow: 10px 10px 50px 10px hsla(241, 81%, 54%, 0.1);
 }
 
 /* LEFT CONTAINER */
 .container__left {
-  font-family: "Hanken Grotesk", sans-serif;
-  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: linear-gradient(
+    hsl(252, 100%, 67%) 1%,
+    hsl(241, 81%, 54%) 99%
+  );
   width: 50%;
-  border-radius: 25px;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
-  gap: 1rem;
 }
 
 .your-result {
-  color: hsla(0, 0%, 100%, 0.664);
+  color: hsla(0, 0%, 100%, 0.8);
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 25px;
   font-weight: 500;
-  padding-bottom: 1rem;
 }
 
 .left__circle {
@@ -65,58 +73,60 @@ body {
 }
 
 .circleTop {
-  font-size: 80px;
+  font-size: 75px;
   font-weight: 800;
   line-height: 1;
 }
 
 .circleBottom {
-  color: hsl(241, 100%, 89%);
+  color: hsla(241, 100%, 89%, 0.5);
 }
 
 .great {
   text-align: center;
   color: hsl(0, 0%, 100%);
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 500;
 }
 
-p {
+.longText {
   color: hsla(0, 0%, 100%, 0.616);
   text-align: center;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-size: 18px;
-  padding-bottom: 1rem;
+  font-size: var(--p-font);
 }
 
 /* RIGHT CONTAINER */
 .container__right {
-  /* font-family: "Hanken Grotesk", sans-serif; */
-  background-color: #fff;
-  border-radius: 15px;
+  width: 50%;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 1.5rem;
-  font-size: 13px;
+  font-size: var(--p-font);
   font-weight: bold;
+  padding: 2rem;
+  gap: 2rem;
 }
 
 .summary {
-  font-size: 15px;
-  font-weight: bolder;
-  padding: 1rem 0;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 700;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+
+.rmvv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .right__boxes {
-  border-radius: 5px;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  width: 200px;
-  height: auto;
   display: flex;
   justify-content: space-between;
+  font-size: var(--p-font);
+  border-radius: 15px;
+  padding: 1rem;
 }
 
 .right__reaction {
@@ -124,7 +134,7 @@ p {
 }
 
 .reaction {
-  color: hsl(0, 100%, 67%);
+  color: hsla(0, 100%, 67%, 0.735);
   display: flex;
 }
 
@@ -133,7 +143,7 @@ p {
 }
 
 .memory {
-  color: hsl(39, 100%, 56%);
+  color: hsl(39, 100%, 56%, 0.735);
   display: flex;
 }
 
@@ -142,7 +152,7 @@ p {
 }
 
 .verbal {
-  color: hsl(166, 100%, 37%);
+  color: hsl(166, 100%, 37%, 0.735);
   display: flex;
 }
 
@@ -151,7 +161,7 @@ p {
 }
 
 .visual {
-  color: hsl(234, 85%, 45%);
+  color: hsl(234, 85%, 45%, 0.735);
   display: flex;
 }
 
@@ -160,30 +170,33 @@ p {
 }
 
 .score {
-  color: hsl(0, 0%, 0%);
+  color: hsla(0, 0%, 0%, 0.7);
   margin-right: 0.5rem;
 }
 
 .score__over {
-  color: hsla(0, 0%, 0%, 0.589);
+  color: hsla(0, 0%, 0%, 0.5);
 }
 
 .overall-score {
   display: flex;
-  flex-direction: row nowrap;
 }
 
 button {
+  width: 100%;
   background-color: hsl(224, 30%, 27%);
   color: hsl(0, 0%, 100%);
-  border-radius: 20px;
+  border-radius: 25px;
   border: none;
-  height: 37px;
-  margin: 1rem 0;
+  padding: 1.1rem;
+  font-size: var(--p-font);
+  margin: 0.5rem 0;
 }
 
 button:hover,
-button:focus {
+button:focus,
+button:active {
+  cursor: pointer;
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
@@ -201,21 +214,16 @@ button:focus {
 }
 
 /* Media Quaries */
-@media only screen and (max-width: 375px) {
-  body {
-    display: flex;
-    overflow: hidden;
-  }
-
+@media only screen and (max-width: 400px) {
   .container {
-    display: grid;
-    margin: 0;
-    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
   }
 
   .container__left {
     width: 100%;
-    height: auto;
+    height: 45vh;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     margin: 0;
@@ -224,15 +232,16 @@ button:focus {
 
   .your-result {
     margin-bottom: 0.5rem;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .left__circle {
-    margin-bottom: 0.5rem;
+    height: 145px;
+    width: 145px;
   }
 
-  .large__incircle {
-    font-size: 50px;
+  .circleTop {
+    font-size: 60px;
   }
 
   .great {
@@ -240,8 +249,8 @@ button:focus {
     font-size: 25px;
   }
 
-  p {
-    font-size: 15px;
+  .longText {
+    font-size: 16px;
   }
 
   br {
@@ -256,30 +265,19 @@ button:focus {
 
   .container__right {
     width: 100%;
-    height: auto;
+    height: 55vh;
     border: none;
     margin: 0;
     padding: 1.5rem;
+    gap: 1rem;
   }
 
   .summary {
-    font-size: 18px;
+    font-size: var(--p-font);
   }
 
   .right__boxes {
-    width: 100%;
-    height: 50px;
     border-radius: 10px;
-    /* 
-        border-top-right-radius: hsla(234, 85%, 45%, 0.055); */
-    align-items: center;
-    font-size: 15px;
-  }
-
-  button {
-    width: 100%;
-    height: 50px;
-    font-size: 18px;
-    border: none;
+    font-size: 16px;
   }
 }
