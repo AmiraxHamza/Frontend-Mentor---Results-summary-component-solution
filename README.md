@@ -32,16 +32,14 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/result-summary-component-using-css-grid-u_ilcdnA8l]
+- Live Site URL: [https://amiraxhamza.github.io/Frontend-Mentor---Results-summary-component-solution/]
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
 
 ### What I learned
 
