@@ -12,60 +12,97 @@
 
     <title>Frontend Mentor | Results summary component</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Hanken+Grotesk">
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Hanken+Grotesk"
+    />
     <script src="data.json"></script>
   </head>
   <body>
     <main class="container">
       <section class="container__left">
         <div class="your-result">Your Result</div>
-        <div class="left__circle"><div class="large__incircle">76</div> <p>of 100</p></div>  
-        <div class="great">Great</div> 
-        <p><span class="pline1">You scored higher than 65% of <br> the</span> <span class="pline2">people who have taken <br>these tests.</span></p>
-      </section>
-      
-      <section class="container__right">
-        <div class="summary">Summary</div> 
-        
-        <div class="right__reaction right__boxes">
-          <div class="reaction"><img src="assets/images/icon-reaction.svg" alt="reaction icon" class="icon"> Reaction</div> 
-          <div class="overall-score">
-          <span class="score">80</span> 
-          <span class="score__over">/ 100</span>
+        <div class="left__circle">
+          <div class="circleTop">76</div>
+          <p class="circleBottom">of 100</p>
         </div>
-        </div> 
-        
+        <div class="great">Great</div>
+        <p>
+          <span class="pline1"
+            >You scored higher than 65% of <br />
+            the</span
+          >
+          <span class="pline2">people who have taken <br />these tests.</span>
+        </p>
+      </section>
+
+      <section class="container__right">
+        <div class="summary">Summary</div>
+
+        <div class="right__reaction right__boxes">
+          <div class="reaction">
+            <img
+              src="assets/images/icon-reaction.svg"
+              alt="reaction icon"
+              class="icon"
+            />
+            Reaction
+          </div>
+          <div class="overall-score">
+            <span class="score">80</span>
+            <span class="score__over">/ 100</span>
+          </div>
+        </div>
+
         <div class="right__memory right__boxes">
-          <div class="memory"><img src="assets/images/icon-memory.svg" alt="memory icon"class="icon">Memory</div>
-          <div class="overall-score"> 
-          <span class="score">92</span> 
-          <span class="score__over">/ 100</span>
+          <div class="memory">
+            <img
+              src="assets/images/icon-memory.svg"
+              alt="memory icon"
+              class="icon"
+            />Memory
           </div>
-        </div> 
-        
+          <div class="overall-score">
+            <span class="score">92</span>
+            <span class="score__over">/ 100</span>
+          </div>
+        </div>
+
         <div class="right__verbal right__boxes">
-          <div class="verbal"><img src="assets/images/icon-verbal.svg" alt="verbal icon"class="icon">Verbal</div>
-          <div class="overall-score"> 
-          <span class="score">61</span> 
-          <span class="score__over">/ 100</span>
+          <div class="verbal">
+            <img
+              src="assets/images/icon-verbal.svg"
+              alt="verbal icon"
+              class="icon"
+            />Verbal
           </div>
-        </div> 
-        
+          <div class="overall-score">
+            <span class="score">61</span>
+            <span class="score__over">/ 100</span>
+          </div>
+        </div>
+
         <div class="right__visual right__boxes">
-          <div class="visual"><img src="assets/images/icon-visual.svg" alt="visual icon"class="icon">Visual</div>
-          <div class="overall-score"> 
-          <span class="score">72</span> 
-          <span class="score__over">/ 100</span>
+          <div class="visual">
+            <img
+              src="assets/images/icon-visual.svg"
+              alt="visual icon"
+              class="icon"
+            />Visual
           </div>
-        </div> 
-        
+          <div class="overall-score">
+            <span class="score">72</span>
+            <span class="score__over">/ 100</span>
+          </div>
+        </div>
+
         <button type="button">Continue</button>
       </section>
     </main>
 
     <footer class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"></a>
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
         Frontend Mentor</a
       >. Coded by <a href="#">Amira Hamza</a>.
     </footer>
